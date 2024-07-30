@@ -20,7 +20,7 @@ const CONFIG = {
   blog: {
     title: "mua-log",
     description: "be nice!",
-    theme: "auto",
+    scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
