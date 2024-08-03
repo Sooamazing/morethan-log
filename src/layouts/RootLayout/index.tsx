@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect } from "react"
-// import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react"
 import { ThemeProvider } from "./ThemeProvider"
 import useScheme from "src/hooks/useScheme"
 import Header from "./Header"
@@ -59,7 +59,7 @@ const RootLayout = ({ children }: Props) => {
       {/* {metaConfig.type !== "Paper" && <Header />} */}
       <Header fullWidth={false} />
       <StyledMain>{children}</StyledMain>
-      {/* <Analytics/> */}
+      <Analytics />
     </ThemeProvider>
   )
 }
